@@ -1,0 +1,13 @@
+{
+  "id": "azure-ml-governance2",
+  "version": "1.0.0",
+  "meta": {
+    "label": "test AzureML → Govern sync",
+    "description": "Collects governance metadata from Azure Machine Learning and sends it to Dataiku Govern",
+    "author": "Dataiku",
+    "icon": "fas fa-puzzle-piece",
+    "licenseInfo": "Apache Software License"
+  },
+  "params": [],
+  "tags": ["azure", "ml", "governance"]
+}

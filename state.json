@@ -1,0 +1,12 @@
+{
+  "actions": [
+    {
+      "ts": 1755771225316,
+      "action": "INSTALL",
+      "user": "omar.hamdan@dataiku.com"
+    }
+  ],
+  "gitState": {
+    "enabled": false
+  }
+}
