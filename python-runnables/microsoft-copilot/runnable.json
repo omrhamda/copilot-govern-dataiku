@@ -1,0 +1,34 @@
+{
+    "meta": {
+        "label": "Microsoft Copilot → Govern sync",
+        "description": "Collects metadata related to Microsoft Copilot (tenant SKUs and Copilot service plans via Microsoft Graph) and syncs them to Dataiku Govern",
+        "icon": "fas fa-robot"
+    },
+
+    "impersonate": false,
+
+    "tabs": [
+        { "name": "copilot", "label": "Microsoft Copilot" },
+        { "name": "govern",  "label": "Govern" }
+    ],
+
+    "params": [
+        { "name": "tenant_id",     "type": "STRING",   "label": "Azure AD Tenant ID", "mandatory": true, "description": "Directory (tenant) ID for your Microsoft Entra ID (Azure AD)." },
+        { "name": "client_id",     "type": "STRING",   "label": "App (client) ID",   "mandatory": true },
+        { "name": "client_secret", "type": "PASSWORD", "label": "Client Secret",     "mandatory": true },
+        { "name": "govern_base",   "type": "STRING",   "label": "Govern Base URL",   "mandatory": true, "description": "Example: https://govern.your-company.com" },
+        { "name": "govern_API_key", "type": "PASSWORD", "label": "Govern API Key",   "mandatory": true },
+
+        { "name": "graph_endpoint", "type": "STRING", "label": "Graph endpoint base", "defaultValue": "https://graph.microsoft.com", "description": "Change only for national clouds." },
+        { "name": "graph_use_beta",  "type": "BOOLEAN", "label": "Use Graph beta", "defaultValue": false },
+
+        { "name": "COPILOT_ONLY_SERVICEPLAN_NAME", "type": "STRING", "label": "Filter by servicePlanName (optional)", "description": "If set, only Copilot service plans with this exact servicePlanName are synced." }
+    ],
+
+    "permissions": [],
+    "resultType": "HTML",
+    "resultLabel": "Microsoft Copilot sync",
+    "extension": "txt",
+    "mimeType": "text/plain",
+    "macroRoles": []
+}
