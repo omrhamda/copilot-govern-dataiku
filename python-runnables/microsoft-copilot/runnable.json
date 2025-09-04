@@ -22,7 +22,14 @@
         { "name": "graph_endpoint", "type": "STRING", "label": "Graph endpoint base", "defaultValue": "https://graph.microsoft.com", "description": "Change only for national clouds." },
         { "name": "graph_use_beta",  "type": "BOOLEAN", "label": "Use Graph beta", "defaultValue": false },
 
-        { "name": "COPILOT_ONLY_SERVICEPLAN_NAME", "type": "STRING", "label": "Filter by servicePlanName (optional)", "description": "If set, only Copilot service plans with this exact servicePlanName are synced." }
+    { "name": "COPILOT_ONLY_SERVICEPLAN_NAME", "type": "STRING", "label": "Filter by servicePlanName (optional)", "description": "If set, only Copilot service plans with this exact servicePlanName are synced." },
+
+    { "name": "include_usage_reports", "type": "BOOLEAN", "label": "Include Copilot usage reports", "defaultValue": true, "description": "Fetch Microsoft 365 Copilot usage CSV from Graph reports and attach aggregated counts as tags." },
+    { "name": "usage_period", "type": "SELECT", "label": "Usage report period", "values": ["D7","D30","D90","D180"], "defaultValue": "D30" },
+    { "name": "usage_report_function", "type": "STRING", "label": "Graph reports function name", "description": "Name of the reports function (e.g., getM365CopilotUsageUserCounts). Leave blank to skip." }
+    ,
+    { "name": "include_audit_logs", "type": "BOOLEAN", "label": "Include directory audit count", "defaultValue": false, "description": "Fetch count of directory audit events in the last N days and attach to project tags." },
+    { "name": "audit_days", "type": "INT", "label": "Audit lookback days", "defaultValue": 30 }
     ],
 
     "permissions": [],
