@@ -1,8 +1,2 @@
 requests
 dataiku-api-client
-azure-ai-ml
-azure-identity
-psycopg2-binary
-azure-mgmt-subscription
-azure-mgmt-machinelearningservices
-azure-mgmt-resource

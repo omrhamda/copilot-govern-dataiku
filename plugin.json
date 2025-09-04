@@ -1,13 +1,13 @@
 {
-  "id": "azure-ml-governance2",
+  "id": "copilot-governance",
   "version": "1.0.0",
   "meta": {
-    "label": "test AzureML → Govern sync",
-    "description": "Collects governance metadata from Azure Machine Learning and sends it to Dataiku Govern",
+    "label": "Microsoft Copilot → Govern sync",
+    "description": "Collects Microsoft Copilot metadata using Microsoft Graph and syncs it to Dataiku Govern",
     "author": "Dataiku",
-    "icon": "fas fa-puzzle-piece",
+    "icon": "fas fa-robot",
     "licenseInfo": "Apache Software License"
   },
   "params": [],
-  "tags": ["azure", "ml", "governance"]
+  "tags": ["microsoft", "copilot", "governance"]
 }
