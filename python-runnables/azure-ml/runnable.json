@@ -1,0 +1,12 @@
+{
+    "meta": {"label": "Deprecated", "description": "This runnable has been removed.", "icon": "fas fa-ban"},
+    "impersonate": false,
+    "tabs": [],
+    "params": [],
+    "permissions": [],
+    "resultType": "NONE",
+    "resultLabel": "",
+    "extension": "txt",
+    "mimeType": "text/plain",
+    "macroRoles": []
+}
